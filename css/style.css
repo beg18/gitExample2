@@ -29,4 +29,17 @@ ul, li {
 	clear: both;
 }
 
+.parent {
+	width: 90%;
+	margin: 0 auto;
+	}
+.child {
+	float: left;
+	width: calc(100% / Q - M % * (Q - 1) / Q); /*Q-кол-во блоков; М-размер отступа; */
+	margin-right: M %; /* отступ- margin в  % */
+	margin-bottom: M %; /* отступ- margin в  % */
+	box-sizing: border-box;
+}
 
+.child:nth-child(Qn) {
+	margin-right: 0;
